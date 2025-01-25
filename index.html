@@ -1,60 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>JSSS Enterprises - Security and Housekeeping Services</title>
-    <link rel="stylesheet" href="style.css"> <!-- Link to your CSS file -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JSSS Enterprises - Security & Housekeeping</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <!-- Header Section -->
-    <header>
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#about">About Us</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-        <h1>Welcome to JSSS Enterprises</h1>
-        <p>Your trusted partner in security and housekeeping services</p>
-    </header>
+  <!-- Header Section -->
+  <header class="main-header">
+    <div class="header-content">
+      <h1>Welcome to JSSS Enterprises</h1>
+      <p>
+        Your trusted partner in Security and Housekeeping services, serving government and private sectors since 2019.
+      </p>
+      <a href="#contact" class="btn-primary">Contact Us</a>
+    </div>
+  </header>
 
-    <!-- Home Section -->
-    <section id="home">
-        <h2>Home</h2>
-        <p>We offer professional and reliable security and housekeeping services for residential, commercial, and industrial clients. Our team is committed to ensuring the safety and cleanliness of your premises.</p>
-    </section>
+  <!-- About Us Section -->
+  <section class="about-us" id="about">
+    <h2>About Us</h2>
+    <p>
+      Established in 2019, JSSS Enterprises specializes in top-notch security and housekeeping services.
+      Our solutions cater to both government and private sectors, ensuring safety and excellence in every project we undertake.
+    </p>
+    <p>
+      Our experienced team is committed to providing tailored services to meet the needs of residential, commercial, and industrial clients.
+    </p>
+  </section>
 
-    <!-- Services Section -->
-    <section id="services">
-        <h2>Our Services</h2>
-        <ul>
-            <li>Security Services</li>
-            <li>Housekeeping Services</li>
-            <li>24/7 Support</li>
-        </ul>
-    </section>
+  <!-- Services Section -->
+  <section class="our-services" id="services">
+    <h2>Our Services</h2>
+    <div class="services-grid">
+      <div class="service-card">
+        <h3>Corporate and Industrial Services</h3>
+        <p>Professional security for corporate and industrial facilities.</p>
+        <a href="our-services.html" class="btn-secondary">Learn More</a>
+      </div>
+      <div class="service-card">
+        <h3>Bank Security</h3>
+        <p>Ensuring safety for financial institutions and transactions.</p>
+        <a href="our-services.html" class="btn-secondary">Learn More</a>
+      </div>
+      <div class="service-card">
+        <h3>Residential Security</h3>
+        <p>Protection for residential properties and construction sites.</p>
+        <a href="our-services.html" class="btn-secondary">Learn More</a>
+      </div>
+      <div class="service-card">
+        <h3>Event Security</h3>
+        <p>Expert security solutions for events of all sizes.</p>
+        <a href="our-services.html" class="btn-secondary">Learn More</a>
+      </div>
+    </div>
+  </section>
 
-    <!-- About Us Section -->
-    <section id="about">
-        <h2>About Us</h2>
-        <p>At JSSS Enterprises, we have a team of dedicated professionals who have years of experience in providing top-notch security and housekeeping services. Our clients' safety and satisfaction are our top priorities.</p>
-    </section>
+  <!-- Contact Us Section -->
+  <section class="contact-us" id="contact">
+    <h2>Contact Us</h2>
+    <p>We’d love to hear from you! Get in touch with us for inquiries or service requirements.</p>
+    <div class="contact-info">
+      <p><strong>Phone:</strong> +91 9819496980, +91 9702911905</p>
+      <p><strong>Email:</strong> <a href="mailto:JSSSenterprises@gmail.com">JSSSenterprises@gmail.com</a></p>
+    </div>
+    <form class="contact-form">
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
 
-    <!-- Contact Section -->
-    <section id="contact">
-        <h2>Contact Us</h2>
-        <p>If you would like to learn more about our services or request a quote, feel free to reach out to us!</p>
-        <p>Email: contact@jsssenterprises.com</p>
-        <p>Phone: +123-456-7890</p>
-    </section>
+      <label for="requirement">Requirement:</label>
+      <input type="text" id="requirement" name="requirement" required>
 
-    <!-- Footer Section -->
-    <footer>
-        <p>&copy; 2025 JSSS Enterprises. All Rights Reserved.</p>
-    </footer>
+      <label for="area">Area Description:</label>
+      <textarea id="area" name="area" rows="4" required></textarea>
+
+      <button type="submit" class="btn-primary">Submit</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 JSSS Enterprises. All Rights Reserved.</p>
+  </footer>
+
+  <script src="js/script.js"></script>
 </body>
 </html>
